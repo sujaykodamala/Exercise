@@ -1,0 +1,44 @@
+﻿<script type="text/html" id="customMessageTemplate">
+    <span data-bind="validationMessage: field"></span>
+</script>
+<form role="form">
+    <div class="form-group">
+        <label for="inpCustomerName">Customer Name</label>
+        <input id="inpCustomerName" type="text" class="form-control" data-bind="value: CustomerName"  />
+        <label id="CustomerName" class="validate" style="color: red"></label>
+    </div>
+
+    <div class="form-group">
+        <label for="inpContactName">Contact Name</label>
+        <input id="inpContactName" type="text" class="form-control" data-bind="value: ContactName"  />
+        <label id="ContactName" class="validate" style="color: red></label>
+    </div>
+
+    <div class="form-group">
+        <label for="inpAddress">Address</label>
+        <input id="inpAddress" type="text" class="form-control" data-bind="value: Address"  />
+        <label id="Address" class="validate" style="color: red"></label>
+    </div>
+
+
+    <div class="form-group">
+        <label for="inpCity">City</label>
+        <input id="inpCity" class="form-control" data-bind="value: City"  />
+        <label id="City" class="validate" style="color: red"></label>
+    </div>
+
+    <div class="form-group">
+        <label for="inpPostalCode">Postal Code</label>
+        <input id="inpPostalCode" class="form-control" data-bind="value: PostalCode"  />
+        <label id="PostalCode" class="validate" style="color: red"></label>
+    </div>
+
+    <div class="form-group">
+        <label for="inpCountry">Country</label>
+        <input id="inpCountry" type="text" class="form-control" data-bind="value: Country"  />
+        <label id="Country" class="validate" style="color: red"></label>
+    </div>
+
+</form>
+
+<input type="button" id="btnAddCustomer" class="btn btn-primary" value="Add Customer" data-bind="click: addCustomer" />
